@@ -1,0 +1,149 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+header{
+  background: rgba(30, 40, 60, 0.897);
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 3px red solid;
+}
+header h1 {
+  text-transform: capitalize;
+  color: aliceblue;
+  font-size: 35px;
+  padding-top: 10px;
+  display: flex;
+}
+.rd {
+  color: red;
+  padding: 0 10px;
+}
+ul{
+  display: flex;
+  padding: 30px;
+  color: aliceblue;
+  font-size: 20px;
+  list-style-type: none;
+}
+li{
+  padding: 0 20px;
+}
+a{
+  text-decoration: none;
+  color: aliceblue;
+}
+a:focus{
+  color: red;
+}
+
+.main{
+  display: flex;
+  align-items: center;
+}
+
+#hd{
+  margin: 0 15px;
+  font-size: 35px;
+  color: dimgray;
+  letter-spacing: 1.5px;
+}
+#hd::first-letter{
+  color: gold;
+  font-size: 45px;
+}
+
+.cont{
+  padding: 3%;
+}
+.one, .two, .three{
+  background: rgba(236, 238, 238, 0.904);
+  line-height: 1.5em;
+  font-size: 18px;
+  margin: 7px;
+  padding: 15px;
+}
+ h2{
+  text-transform: capitalize;
+  padding: 8px 0;
+  color: brown;
+}
+h5{
+  font-size: 20px;
+  text-transform: capitalize;
+  color: gray;
+  padding: 10px 0;
+}
+
+form{
+  display: flex;
+  flex-flow: column;
+  background: black;
+  color: aliceblue;
+  padding: 30px;
+  margin-right: 70px;
+}
+form h2{
+  font-size: 40px;
+  border-bottom: 2px silver solid;
+  margin-bottom: 20px;
+  color: yellow;
+}
+input{
+  margin: 10px 0;
+  padding: 5px;
+  font-size: 20px;
+  border-radius: 5px;
+}
+#btn{
+  margin-top: 20px;
+  background: rgb(202, 105, 49);
+}
+label{
+  font-size: 25px;
+}
+
+
+footer{
+  background: rgb(202, 105, 49);
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
+}
+
+
+
+@media(max-width: 950px){
+  header{
+    flex-flow: column;
+    }
+    header h1 {
+      font-size: 30px;
+      padding-top: 8px;
+    }
+    
+    ul{
+      padding: 15px 5px;
+      font-size: 15px;
+    }
+    li{
+      padding: 0 15px;
+    }
+
+    .main{
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+    }
+    #hd{
+      font-size: 30px;
+    }
+    form{
+      margin: 15px 0;
+      padding: 20px;
+    }
+    form h2{
+      font-size: 30px;
+    }
+  }

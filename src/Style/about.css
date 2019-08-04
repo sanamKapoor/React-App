@@ -1,0 +1,107 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+header{
+  background: rgba(30, 40, 60, 0.897);
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 3px red solid;
+}
+header h1 {
+  text-transform: capitalize;
+  color: aliceblue;
+  font-size: 35px;
+  padding-top: 10px;
+  display: flex;
+}
+.rd {
+  color: red;
+  padding: 0 10px;
+}
+ul{
+  display: flex;
+  padding: 30px;
+  color: aliceblue;
+  font-size: 20px;
+  list-style-type: none;
+}
+li{
+  padding: 0 20px;
+}
+a{
+  text-decoration: none;
+  color: aliceblue;
+}
+a:focus{
+  color: red;
+}
+.content{
+  padding: 0 5%;
+}
+.one{
+  padding: 20px;
+  width: 70vw;
+  line-height: 1.5em;
+  font-size: 18px;
+}
+ h2{
+  text-transform: capitalize;
+  padding: 20px 0;
+}
+.two{
+  background: rgb(97, 95, 95);
+  margin-top: 30px;
+  padding: 20px;
+  width: 30vw;
+  line-height: 1.5em;
+  font-size: 18px;
+  float: right;
+  color: aliceblue;
+}
+.slide{
+  display: flex;
+}
+.three{
+  padding: 20px;
+  background: rgb(97, 95, 95);
+  line-height: 1.5em;
+  font-size: 18px;
+  color: aliceblue;
+  margin: 30px 0;
+}
+footer{
+  background: rgb(202, 105, 49);
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
+}
+
+@media(max-width: 750px){
+  header{
+    flex-flow: column;
+    }
+    header h1 {
+      font-size: 30px;
+      padding-top: 8px;
+    }
+    
+    ul{
+      padding: 15px 5px;
+      font-size: 15px;
+    }
+    li{
+      padding: 0 15px;
+    }
+
+    .two{
+      margin-top: 20px;
+      width: 80vw;
+      
+    }
+    .slide{
+      display: flex;
+      flex-flow: column;
+    }
+  }
